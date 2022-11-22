@@ -1,0 +1,91 @@
+---
+name: Mario Edoardo
+surname: Pandolfo
+position: "Student in Data Science"
+address: "Via riserva di Casteldardo 5"
+phone: "+39 342 71 56 583"
+#www: jrhin.com
+email: "pandolfo_mario@yahoo.com"
+twitter: JRhin_
+github: JRhin
+linkedin: jrhin
+date: "`r format(Sys.time(), '%B %Y')`"
+docname: "résumé"
+moderncvtheme: classic
+output: vitae::moderncv
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'  
+             ,'tibble'   
+             ,'magrittr' 
+             ,'here'  
+             ,'readr' 
+             ,'glue'
+            )
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("data","data.r"))
+
+library(vitae)
+```
+
+# Some stuff about me
+
+ * Studying magic and mentalism by my-self.
+
+# Work Experience
+
+```{r Work}
+work %>% 
+  detailed_entries(what = Title,
+                   when = glue::glue("{startMonth} {startYear} to {endMonth} {endYear}",.na = ""),
+                   where = Where,
+                   why = Desc
+                   )
+```
+
+# Education
+
+```{r Education}
+education %>% 
+  detailed_entries(Degree, glue::glue("{startYear} - {endYear}",.na = ""), Institution, Where)
+```
+
+# Certifications
+
+```{r Certifications}
+library(tibble)
+certifications %>% 
+  detailed_entries(what = Type,
+                   when = Year
+                   )
+```
+
+# Competitions
+
+```{r Competitions}
+competitions %>% 
+  detailed_entries(what = Type,
+                   when = When,
+                   where = Where,
+                   why = Desc
+                   )
+```
+
+
+# Curiosities about me
+
+```{r Curiosities}
+curiosities %>% 
+  detailed_entries(what = Type,
+                   when = When,
+                   where = Where,
+                   why = Desc
+                   )
+```
