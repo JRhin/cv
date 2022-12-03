@@ -11,9 +11,10 @@ work <- tribble(
 )
 
 certifications <- tribble(
-  ~ Type, ~ Year,
-  "B2 First for Schools - FCE", NA,
-  "ECDL Full Standard", "Expired."
+  ~ Type, ~ Desc, ~ Year, ~ Month,
+  "B2 First for Schools - FCE",NA, NA, NA,
+  "ECDL Full Standard", NA, "Expired.", NA,
+  "Certificate of Completion - Gurobi Optimization 101 for Data Scientist", NA, "2022", "Nov." 
 )
 
 curiosities <- tribble(

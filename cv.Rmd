@@ -63,7 +63,8 @@ education %>%
 library(tibble)
 certifications %>% 
   detailed_entries(what = Type,
-                   when = Year
+                   when = glue::glue("{Month} {Year}",.na = ""),
+                   why = Desc
                    )
 ```
 
