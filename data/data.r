@@ -28,7 +28,7 @@ competitions <- tribble(
   "World Traditional Kung Fu Championship", "Dec. 2014", "Rome, Italy", "I was the only one of my age in the category, so I had to compete with people over 20 years old.",
   "\"Come suona la tua vita?\" contest", "2017", "Rome, Italy", "1° prize for the aphorism category.",
   "Hackathon organized for the Statistical Learning Course", "July 2022", "Rome, Italy", "The goal of this 48h Hackathon was to implement a model that was able to classify the \"heart rate zone\" from a dataset collected with an Apple Watch accompanied by a Polar OH1 sensor. I was the leader of our group, which was composed by three people of different nationalities, so to understand each other we had to talk in english.", 
-  "Training Camp with Amazon", "July 2023", "Rome, Italy", "I took part with a team in an Amazon Jam in which we faced tests regarding \"AWS Educate Introduction to Cloud 101\"."
+  "Training Camp with Amazon", "July 2023", "Rome, Italy", "I took part with a team in an Amazon Jam, where we faced 12 challenges about \"AWS Educate Introduction to Cloud 101\". It was estimated that to complete all the challenges it would take near 12 hours, we complete all of them just in four."
 )
 
 projects <- tribble(
